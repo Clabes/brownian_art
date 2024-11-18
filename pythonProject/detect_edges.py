@@ -6,11 +6,14 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 
 # Step 1: Download the image
-url = "https://www.worldhistory.org/img/r/p/500x600/7341.jpg?v=1506582017"
+# url = "https://www.worldhistory.org/img/r/p/500x600/7341.jpg?v=1506582017"
 # url = "https://www.myinterestingfacts.com/wp-content/uploads/2014/03/Han-Dynasty-Dragon.jpg"
-ver = 1
-response = requests.get(url)
-image = Image.open(BytesIO(response.content))
+# url = "https://image.invaluable.com/housePhotos/tgbowo/68/628368/H20986-L147689995.jpg"
+ver = 3
+# response = requests.get(url)
+# image = Image.open(BytesIO(response.content))
+
+image = Image.open("/Users/clbar/math/brownian_art/pythonProject/images/img.png")
 
 # Step 2: Convert to grayscale
 grayscale_image = image.convert("L")
